@@ -28,7 +28,8 @@ git push -u origin main
 5. Configure build settings:
    - **Base directory**: `frontend`
    - **Build command**: `yarn build`
-   - **Publish directory**: `frontend/build`
+   - **Publish directory**: `build`
+   - **Node.js version**: 20 (automatically detected from .nvmrc)
 6. Click **"Deploy site"**
 
 #### Step 3: Configure Site Settings
