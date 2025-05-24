@@ -150,8 +150,22 @@ After deployment, verify:
 
 ### Common Issues:
 
+**Build Fails with Node.js Version Error:**
+```
+error react-router-dom@7.5.1: The engine "node" is incompatible with this module
+```
+**Fix:** 
+- We've removed react-router-dom (not needed for this project)
+- Added `.nvmrc` file with Node.js 20
+- Updated `netlify.toml` with correct Node version
+
+**Wrong Publish Directory:**
+If you see `frontend/frontend/build` error:
+- **Base directory**: `frontend`
+- **Publish directory**: `build` (not `frontend/build`)
+
 **Build Fails:**
-- Check Node.js version (18+ recommended)
+- Check Node.js version (20+ recommended)
 - Verify `yarn build` works locally
 - Check for missing dependencies
 
